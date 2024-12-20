@@ -55,7 +55,7 @@ public:
 
     bool push(T value) {
         if (isFull()) {
-            resize(capacity * 2);  // Увеличиваем размер массива вдвое
+            resize(capacity * 2);
         }
 
         buffer[end] = value;
@@ -65,7 +65,7 @@ public:
 
     T pop() {
         if (isEmpty()) {
-            throw std::runtime_error("Очередь пуста!");
+            throw "Empty queue!"
         }
 
         T value = buffer[start];
