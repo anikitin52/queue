@@ -99,4 +99,3 @@ TEST(Queue, ClearQueueIsEmpty) {
     q.clear();
     ASSERT_EQ(q.isEmpty(), true);
 }
-
